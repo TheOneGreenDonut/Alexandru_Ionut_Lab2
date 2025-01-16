@@ -1,0 +1,37 @@
+﻿@page
+@model Alexandru_Ionut_Lab2.Pages.Publishers.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Publisher[0].PublisherName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Publisher[0].PublisherAddress)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Publisher)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PublisherName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PublisherAddress)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

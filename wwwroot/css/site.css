@@ -1,0 +1,108 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #e86262;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.btn-custom {
+    background-color: #4CAF50; /* Culoare verde */
+    color: whitesmoke;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: grab;
+}
+
+    .btn-custom:hover {
+        background-color: #000000;
+    }
+
+    .btn-custom:active {
+        background-color: #000000;
+    }
+/* Schimbă background-ul întregii aplicații */
+body {
+    background-color: #0000008c; /* Culoare de fundal deschisă */
+    font-family: Stencil, sans-serif;
+}
+
+/* Schimbă background-ul pentru header */
+header {
+    background-color: #0000008c; /* Verde pentru header */
+    color: darkseagreen;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Schimbă background-ul pentru secțiuni sau div-uri */
+.content {
+    background-color: #0000008c; /* Fundal alb pentru conținut */
+    padding: 30px;
+    border-radius: 8px;
+}
+
+/* Stilizare pentru footer */
+footer {
+    background-color: #333333; /* Fundal închis pentru footer */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+/* Personalizează meniul de navigare */
+nav {
+    background-color: #332; /* Fundal închis pentru meniu */
+    padding: 10px;
+    text-align: center;
+}
+
+    /* Personalizează stilul fiecărui element de meniu */
+    nav ul {
+        list-style-type: initial; /* Elimină punctele de la listă */
+        margin: 0;
+        padding: 0;
+    }
+
+        nav ul li {
+            display: inline-block; /* Aranjează itemii pe o singură linie */
+            margin: 0 15px; /* Adaugă un spațiu între itemii meniului */
+        }
+
+            nav ul li a {
+                text-decoration: none; /* Elimină sublinierea din linkuri */
+                color: darkred; /* Culoare albă pentru text */
+                font-size: 20px; /* Mărimea textului */
+                padding: 8px 15px;
+                border-radius: 7px; /* Colțuri rotunjite pentru linkuri */
+                transition: background-color 0.3s; /* Adaugă o tranziție pentru schimbarea culorii */
+            }
+
+                /* Culoare de fundal la trecerea cu mouse-ul */
+                nav ul li a:hover {
+                    background-color: darkseagreen; /* Culoare verde la hover */
+                }
+
+                /* Culoare de fundal când elementul este activ */
+                nav ul li a.active {
+                    background-color: #4CAF50; /* Culoare verde pentru linkul activ */
+                }
+
